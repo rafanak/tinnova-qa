@@ -38,8 +38,8 @@ Para a escrita dos cenários e descrição dos testes na IDE, as páginas foram 
 * Ao tentar adicionar ou editar um usuário com algum valor inválido, indicar qual campo está errado 
 * Acrescentar tooltip aos botões de consulta, edição e deletar
 * Ao deletar um usuário, a página deveria se manter na homepage invés de voltar para a welcomepage
-* Opção de ordenar a tabela por Nome ou data de adição
-* Filtro de usuário por nome
+* Opção de ordenar a tabela da homepage por Nome ou data de adição de usuário
+* Filtro de usuário na homepage por nome
 * Verificar se usuário é repetido na hora da criação/edição
 
 ### Correções
