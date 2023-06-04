@@ -1,0 +1,21 @@
+{
+  "name": "tinnova",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "author": "Rafaela",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-webdriver": "^4.9.2"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.2",
+    "chai": "^4.3.7",
+    "cucumber": "^6.0.7",
+    "hamjest": "^4.0.1"
+  },
+  "keywords": [],
+  "description": ""
+}
