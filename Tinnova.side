@@ -1,0 +1,987 @@
+{
+  "id": "85e3b3de-886f-4f2b-a9ae-6753ff316ad7",
+  "version": "2.0",
+  "name": "Tinnova",
+  "url": "https://tinnova-teste-qa.vercel.app/",
+  "tests": [{
+    "id": "ba431da2-5cae-4b84-bf01-e4cbdc198800",
+    "name": "Email incorreto",
+    "commands": [{
+      "id": "6a104d12-57df-417e-ab21-9b36050f4208",
+      "comment": "Abre welcomepage",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4101635-af94-4fe8-b928-9b78101289fd",
+      "comment": "Entra na home page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4400284-dce0-40b9-acb3-33067c837741",
+      "comment": "Entra na forms page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ:nth-child(3)",
+      "targets": [
+        ["css=.sc-bczRLJ:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a7701c3-4cca-4897-8ccc-728ffca30b30",
+      "comment": "Adiciona Nome correto",
+      "command": "type",
+      "target": "name=name",
+      "targets": [],
+      "value": "Rafaela"
+    }, {
+      "id": "7e9bb6e2-fb8b-4e15-b4a7-ec3052c16d4a",
+      "comment": "Adiciona email incorreto",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "12312321"
+    }, {
+      "id": "0e03ab7e-2089-45ac-84a2-58aaefc17a47",
+      "comment": "Adiciona CPF correto",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [],
+      "value": "58252950035"
+    }, {
+      "id": "4bae527a-a3ff-48e5-928c-c9bac49e9870",
+      "comment": "Adiciona Telefone correto",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [],
+      "value": "11999999999"
+    }, {
+      "id": "6d0464b1-b9c1-45b0-a681-3c8f96ca2fe8",
+      "comment": "Clica em Guardar",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[6]", "xpath:idRelative"],
+        ["xpath=//div/div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8b90893-5af9-479c-ad3c-f84c54b27db8",
+      "comment": "Verifica se a messagebox de erro aparece",
+      "command": "assertElementPresent",
+      "target": "css=.swal-modal",
+      "targets": [
+        ["css=.swal-modal", "css:finder"],
+        ["xpath=//div[9]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fbcdbcdc-6135-476c-b08d-ad4294de2893",
+    "name": "Usuário válido",
+    "commands": [{
+      "id": "a64e59f3-7fc3-485c-b178-3499e98caf70",
+      "comment": "Abre welcomepage",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5ea3ae2-dda5-41cb-9582-d89e55ba9819",
+      "comment": "Entra na home page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "223e9ad3-74d1-42c6-9341-1a207be05c40",
+      "comment": "Entra na forms page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ:nth-child(3)",
+      "targets": [
+        ["css=.sc-bczRLJ:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72410c9e-9565-40a8-80e6-729cc7a1f0b5",
+      "comment": "Adiciona Nome correto",
+      "command": "type",
+      "target": "name=name",
+      "targets": [],
+      "value": "Rafaela"
+    }, {
+      "id": "e3984d7b-019a-488b-8fe2-dede26ee351c",
+      "comment": "Adiciona email correto",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "teste@teste.com.br"
+    }, {
+      "id": "b8d2a80f-c404-40cc-9c11-699b844e651f",
+      "comment": "Adiciona CPF correto",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [],
+      "value": "58252950035"
+    }, {
+      "id": "0e98c6dd-d024-4b74-a211-2aa6153ec371",
+      "comment": "Adiciona Telefone correto",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [],
+      "value": "11999999999"
+    }, {
+      "id": "52a29a7a-34b6-4cd1-b480-010129b70f73",
+      "comment": "Clica em Guardar",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[6]", "xpath:idRelative"],
+        ["xpath=//div/div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e46e781d-ab19-4b83-a1f3-78370a5f8ab8",
+    "name": "Nome incorreto",
+    "commands": [{
+      "id": "7392dcf6-80dc-4c03-bb09-a9b45d1d3497",
+      "comment": "Abre welcomepage",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d6e380b-a449-40bf-99ed-c248e990b786",
+      "comment": "Entra na home page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3a1cf02-22df-45f9-9fb0-4c464296543d",
+      "comment": "Entra na forms page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ:nth-child(3)",
+      "targets": [
+        ["css=.sc-bczRLJ:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b655a972-b42c-424d-ab3d-07fd6a89e300",
+      "comment": "Adiciona nome incorreto",
+      "command": "type",
+      "target": "name=name",
+      "targets": [],
+      "value": "123"
+    }, {
+      "id": "d27b50ac-c421-4528-bd5c-ce19f8fdbc25",
+      "comment": "Adiciona email correto",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.sc-kDDrLX:nth-child(3) > .sc-iqcoie", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "teste@teste.com.br"
+    }, {
+      "id": "77df9b7d-66a9-418f-8fb8-69145d88fb78",
+      "comment": "Adiciona CPF correto",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [],
+      "value": "58252950035"
+    }, {
+      "id": "5071c7d8-d90a-4e78-ad2b-d780e8a54817",
+      "comment": "Adiciona Telefone correto",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [],
+      "value": "11999999999"
+    }, {
+      "id": "0a24953c-93a2-4bcd-b313-f25e64f55455",
+      "comment": "Clica em Guardar",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[6]", "xpath:idRelative"],
+        ["xpath=//div/div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d43e742-c9a0-4a58-90fd-5ac8b60d5293",
+      "comment": "Verifica se a messagebox de erro aparece",
+      "command": "assertElementPresent",
+      "target": "css=.swal-modal",
+      "targets": [
+        ["css=.swal-modal", "css:finder"],
+        ["xpath=//div[9]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4c1bb997-a294-40dc-b120-9eb1125a47dd",
+    "name": "Telefone incorreto",
+    "commands": [{
+      "id": "11fee9cf-fc2c-4535-9bb4-71d8225fcaea",
+      "comment": "Abre welcomepage",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "351c65fb-105d-418d-a8d4-79927af540dc",
+      "comment": "Entra na home page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7174dda4-b5c9-468f-b710-ee21e2b95cee",
+      "comment": "Entra na forms page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ:nth-child(3)",
+      "targets": [
+        ["css=.sc-bczRLJ:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edb457ed-fc71-4c3e-8a6d-8731ceb048f3",
+      "comment": "Adiciona Nome correto",
+      "command": "type",
+      "target": "name=name",
+      "targets": [],
+      "value": "Rafaela"
+    }, {
+      "id": "be205193-59df-4725-b8e3-a56f35d8c90c",
+      "comment": "Adiciona email correto",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.sc-kDDrLX:nth-child(3) > .sc-iqcoie", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "teste@teste.com.br"
+    }, {
+      "id": "d0ec4058-b6a8-49ff-b9be-99b67d739766",
+      "comment": "Adiciona CPF correto",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [],
+      "value": "58252950035"
+    }, {
+      "id": "941256bc-7382-48dc-8315-fefccf242836",
+      "comment": "Adiciona Telefone incorreto",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [],
+      "value": "sdafsadfas"
+    }, {
+      "id": "851f3f43-747e-4e13-85a8-48e6f804e3fa",
+      "comment": "Clica em Guardar",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[6]", "xpath:idRelative"],
+        ["xpath=//div/div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f38fa66-1538-422d-b809-85f91bb46b02",
+      "comment": "Verifica se a messagebox de erro aparece",
+      "command": "assertElementPresent",
+      "target": "css=.swal-modal",
+      "targets": [
+        ["css=.swal-modal", "css:finder"],
+        ["xpath=//div[9]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dd6dd201-46c5-4110-98c8-e9f86a27bd04",
+    "name": "Editar CPF incorreto",
+    "commands": [{
+      "id": "68a9a8c0-e492-40e3-9db1-90cdbb84a110",
+      "comment": "Abre welcomepage",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e1abc3f-016d-421d-8269-1c56db5da50a",
+      "comment": "Entra na home page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5430747a-7cd4-499d-b047-60ed7c280770",
+      "comment": "Clica no botão de editar",
+      "command": "click",
+      "target": "css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(3)",
+      "targets": [
+        ["css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/div[5]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f611f70-e5f5-46c3-9f16-acee1173b844",
+      "comment": "Adiciona Nome correto",
+      "command": "type",
+      "target": "name=name",
+      "targets": [],
+      "value": "Rafaela"
+    }, {
+      "id": "49320aeb-d32f-4a0d-b90f-145d9c19bdca",
+      "comment": "Adiciona email correto",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.sc-kDDrLX:nth-child(3) > .sc-iqcoie", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "teste@teste.com.br"
+    }, {
+      "id": "6abdb742-f49d-431c-a973-b9f302b41141",
+      "comment": "Adiciona CPF incorreto",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [],
+      "value": "sadfasdfdas"
+    }, {
+      "id": "3c2997db-370c-4051-a661-88293c99ee80",
+      "comment": "Adiciona Telefone correto",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [],
+      "value": "11999999999"
+    }, {
+      "id": "e6f30640-4500-466b-834b-f9a696410ffd",
+      "comment": "Clica em atualizar",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b6bd686-6dcb-4810-96c7-8f361ec408ec",
+      "comment": "Verifica se a messagebox de erro aparece",
+      "command": "assertElementPresent",
+      "target": "css=.swal-modal",
+      "targets": [
+        ["css=.swal-modal", "css:finder"],
+        ["xpath=//div[9]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a9d0af75-707a-4106-bdcf-5ea880cd1978",
+    "name": "Consulta usuario",
+    "commands": [{
+      "id": "ec522dbe-aa9e-4ecb-a2be-b3c900eb29ed",
+      "comment": "Abre welcomepage",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d772399-7566-4610-946a-37ca71dc58a8",
+      "comment": "Entra na home page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "627c2f97-8023-48b4-8d94-2b246c4103cc",
+      "comment": "Clica na lupa do primeiro elemento",
+      "command": "click",
+      "target": "css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(2)",
+      "targets": [
+        ["css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/div[5]/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5db5d067-57dd-45ef-8859-87978041501a",
+      "comment": "Verifica se campo nome é não editável",
+      "command": "verifyNotEditable",
+      "target": "name=name",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "080f04bf-1b61-4b41-87ff-4964536ca1b2",
+      "comment": "Verifica se campo email é não editável",
+      "command": "verifyNotEditable",
+      "target": "name=email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87c0d9d1-5816-4501-b5d6-78bb437f76c8",
+      "comment": "Verifica se campo cpf é não editável",
+      "command": "verifyNotEditable",
+      "target": "name=cpf",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af52ecf7-d376-4a81-a43d-4b6651ab7215",
+      "comment": "Verifica se campo telefone é não editável",
+      "command": "verifyNotEditable",
+      "target": "name=phone",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62bf3439-ff4d-4770-a1a9-b46044c789c7",
+      "comment": "Clica em voltar",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "861a436a-37e9-4ea5-b95e-25ccbba012d8",
+    "name": "Editar usuário válido",
+    "commands": [{
+      "id": "e5409867-699b-406c-9e02-7e69df895fcb",
+      "comment": "Abre welcomepage",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91311164-a946-4e9a-9db0-570a94c255c2",
+      "comment": "Entra na home page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36b9727c-3cc9-4094-a929-6dbdf4752ec0",
+      "comment": "Clica no botão de editar",
+      "command": "click",
+      "target": "css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(3)",
+      "targets": [
+        ["css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/div[5]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1ffc2c3-08f9-475c-8c07-d6cd25fe4901",
+      "comment": "Troca o nome por outro válido",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.sc-kDDrLX:nth-child(2) > .sc-iqcoie", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Rafaela"
+    }, {
+      "id": "87781222-94c5-4931-abc2-7ceec749ee60",
+      "comment": "Clica em atualizar",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "361a9453-9b57-4294-ad04-e49efc125087",
+    "name": "CPF incorreto",
+    "commands": [{
+      "id": "2b5dc280-b4b3-4065-aec4-1d118dea94d6",
+      "comment": "Abre welcomepage",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f43f89f-d39b-472d-89b4-968b982e853f",
+      "comment": "Entra na home page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92600571-d3ca-4439-8ffb-d88213ab7fc3",
+      "comment": "Entra na forms page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ:nth-child(3)",
+      "targets": [
+        ["css=.sc-bczRLJ:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b971d5b7-5583-4511-ba0c-584c3072e103",
+      "comment": "Adiciona Nome correto",
+      "command": "type",
+      "target": "name=name",
+      "targets": [],
+      "value": "Rafaela"
+    }, {
+      "id": "13365cce-4a88-4800-b506-c85a59e21938",
+      "comment": "Adiciona email correto",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.sc-kDDrLX:nth-child(3) > .sc-iqcoie", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "teste@teste.com.br"
+    }, {
+      "id": "1045aa1e-43d2-4911-ac99-49bf9881601e",
+      "comment": "Adiciona CPF incorreto",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [],
+      "value": "sadfasdfdas"
+    }, {
+      "id": "907ce7e8-d192-4ef0-b555-29d452058b8d",
+      "comment": "Adiciona Telefone correto",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [],
+      "value": "11999999999"
+    }, {
+      "id": "2f65f09f-bb89-42c9-9784-993c4738e44b",
+      "comment": "Clica em Guardar",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[6]", "xpath:idRelative"],
+        ["xpath=//div/div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "682fc520-0b50-4ba5-a41d-18cb605be3e6",
+      "comment": "Verifica se a messagebox de erro aparece",
+      "command": "assertElementPresent",
+      "target": "css=.swal-modal",
+      "targets": [
+        ["css=.swal-modal", "css:finder"],
+        ["xpath=//div[9]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "59054e5f-ebc5-44a4-99a5-461ef703783a",
+    "name": "Editar Email incorreto",
+    "commands": [{
+      "id": "ca7980ea-9195-43db-9cbf-12b042e994d3",
+      "comment": "Abre welcomepage",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07a21c3b-c35b-4a5e-a22b-3c1b99f02f8b",
+      "comment": "Entra na home page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb685da2-4b7c-497d-9eb4-692ff80bf1de",
+      "comment": "Clica no botão de editar",
+      "command": "click",
+      "target": "css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(3)",
+      "targets": [
+        ["css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/div[5]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08d9a928-072c-4447-80ae-7541d3f581af",
+      "comment": "Adiciona Nome correto",
+      "command": "type",
+      "target": "name=name",
+      "targets": [],
+      "value": "Rafaela"
+    }, {
+      "id": "279dfa31-f1f9-4213-b96f-15604eb5f0eb",
+      "comment": "Adiciona email incorreto",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "12312321"
+    }, {
+      "id": "4fe7ff23-e52a-43bf-9d2c-415d23299c1b",
+      "comment": "Adiciona CPF correto",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [],
+      "value": "58252950035"
+    }, {
+      "id": "5267d7fb-dd5a-46e8-85db-a344d5da0172",
+      "comment": "Adiciona Telefone correto",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [],
+      "value": "11999999999"
+    }, {
+      "id": "69f9e9a6-ff32-4161-9fc8-fd739da0be2b",
+      "comment": "Clica em atualizar",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f409211d-e762-4dd6-aea7-31002b12a331",
+      "comment": "Verifica se a messagebox de erro aparece",
+      "command": "assertElementPresent",
+      "target": "css=.swal-modal",
+      "targets": [
+        ["css=.swal-modal", "css:finder"],
+        ["xpath=//div[9]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1dc37b71-ac48-4eb6-a8da-d351e8beee90",
+    "name": "Editar Nome incorreto",
+    "commands": [{
+      "id": "a0ae1c83-ab67-4344-b03c-ebe9b096740c",
+      "comment": "Abre welcomepage",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d96edf5e-70eb-4375-9686-66d5e030e561",
+      "comment": "Entra na home page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7a36f5f-afd7-462c-bb27-4d5d3149b15a",
+      "comment": "Clica no botão de editar",
+      "command": "click",
+      "target": "css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(3)",
+      "targets": [
+        ["css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/div[5]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b67a709-b18a-49d8-87f5-8ffbf7a24065",
+      "comment": "Adiciona nome incorreto",
+      "command": "type",
+      "target": "name=name",
+      "targets": [],
+      "value": "123"
+    }, {
+      "id": "da67fd85-20a3-4d8f-99db-ba750aad3877",
+      "comment": "Adiciona email correto",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.sc-kDDrLX:nth-child(3) > .sc-iqcoie", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "teste@teste.com.br"
+    }, {
+      "id": "b37ba1a9-97d3-4502-8078-1bfc364962e3",
+      "comment": "Adiciona CPF correto",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [],
+      "value": "58252950035"
+    }, {
+      "id": "696b35b4-2ddc-4394-b509-b3cac91ea091",
+      "comment": "Adiciona Telefone correto",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [],
+      "value": "11999999999"
+    }, {
+      "id": "efe52a48-d1aa-44b8-bbc9-fa7e130dd4a6",
+      "comment": "Clica em atualizar",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b098d976-c68d-4489-87b5-afba9c8c8b71",
+      "comment": "Verifica se a messagebox de erro aparece",
+      "command": "assertElementPresent",
+      "target": "css=.swal-modal",
+      "targets": [
+        ["css=.swal-modal", "css:finder"],
+        ["xpath=//div[9]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1f420f48-9f36-4efa-80da-922a3e3e2180",
+    "name": "Editar Telefone incorreto",
+    "commands": [{
+      "id": "57f732b1-49dd-4bc5-ab64-c1aba22f13e9",
+      "comment": "Abre welcomepage",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c581a39-2cfc-4a80-bdf4-2e72f6e0e22d",
+      "comment": "Entra na home page",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "631c92dc-2866-4c72-918d-5408ff1adb8e",
+      "comment": "Clica no botão de editar",
+      "command": "click",
+      "target": "css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(3)",
+      "targets": [
+        ["css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/div[5]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32e59cae-d0d7-4298-b123-a2c75bf4a518",
+      "comment": "Adiciona Nome correto",
+      "command": "type",
+      "target": "name=name",
+      "targets": [],
+      "value": "Rafaela"
+    }, {
+      "id": "3af8160d-37df-495e-bedd-65705d8f4c78",
+      "comment": "Adiciona email correto",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.sc-kDDrLX:nth-child(3) > .sc-iqcoie", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "teste@teste.com.br"
+    }, {
+      "id": "7b5e4d6a-01a1-4b04-9c52-a55dd8aa82aa",
+      "comment": "Adiciona CPF correto",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [],
+      "value": "58252950035"
+    }, {
+      "id": "59962898-b56e-46cc-b08b-12e9d71fe733",
+      "comment": "Adiciona Telefone incorreto",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [],
+      "value": "sdafsadfas"
+    }, {
+      "id": "710a8b2e-69cf-4495-b62b-7e7fe7b087b4",
+      "comment": "Clica em atualizar",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fadf1ce-a5ec-4dc4-b2c7-5c202058eb88",
+      "comment": "Verifica se a messagebox de erro aparece",
+      "command": "assertElementPresent",
+      "target": "css=.swal-modal",
+      "targets": [
+        ["css=.swal-modal", "css:finder"],
+        ["xpath=//div[9]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2bd3a97e-b01a-4f75-b0ec-5b1a56ae44e7",
+    "name": "Deletar usuário",
+    "commands": [{
+      "id": "1cb9c6ec-bcdf-4b69-840f-337cccf27961",
+      "comment": "Abre welcomepage",
+      "command": "open",
+      "target": "https://tinnova-teste-qa.vercel.app/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef1b181a-ccc7-4275-93af-4d047f028b64",
+      "comment": "Entra na homepage",
+      "command": "click",
+      "target": "css=.sc-bczRLJ",
+      "targets": [
+        ["css=.sc-bczRLJ", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be54b449-f562-4552-91b3-b70395683a9c",
+      "comment": "Clica no botão de deletar",
+      "command": "click",
+      "target": "css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(4) path",
+      "targets": [
+        ["css=.sc-gKXOVf:nth-child(1) .sc-dkzDqf:nth-child(4) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcb03fab-3e28-450d-927c-e4a75f1bf67a",
+      "comment": "Clica no botão de confirmar a exclusão",
+      "command": "click",
+      "target": "css=.swal-button--confirm",
+      "targets": [
+        ["css=.swal-button--confirm", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bb6181a-3d4d-4a79-81f8-d63af8754a91",
+      "comment": "Verifica se volta pra homepage",
+      "command": "",
+      "target": "css=.sc-bczRLJ",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "782fbc33-bc5a-4a38-af74-fbc2c9e99eab",
+    "name": "Criação de usuário - válido",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fbcdbcdc-6135-476c-b08d-ad4294de2893"]
+  }, {
+    "id": "39d1b8de-c71f-427b-b9de-4197ed63485a",
+    "name": "Criação de usuário - inválido",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ba431da2-5cae-4b84-bf01-e4cbdc198800", "e46e781d-ab19-4b83-a1f3-78370a5f8ab8", "4c1bb997-a294-40dc-b120-9eb1125a47dd", "361a9453-9b57-4294-ad04-e49efc125087"]
+  }, {
+    "id": "c8fcbdb9-6252-4b85-aad1-36fd63e13257",
+    "name": "Consulta usuário",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a9d0af75-707a-4106-bdcf-5ea880cd1978"]
+  }, {
+    "id": "efa8901a-11f2-4d83-8862-daae91982c4b",
+    "name": "Editar usuário",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dd6dd201-46c5-4110-98c8-e9f86a27bd04", "59054e5f-ebc5-44a4-99a5-461ef703783a", "1dc37b71-ac48-4eb6-a8da-d351e8beee90", "1f420f48-9f36-4efa-80da-922a3e3e2180", "861a436a-37e9-4ea5-b95e-25ccbba012d8"]
+  }, {
+    "id": "0ef96707-cad6-443b-9452-a146cc185b49",
+    "name": "Deletar usuário",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2bd3a97e-b01a-4f75-b0ec-5b1a56ae44e7"]
+  }],
+  "urls": ["https://tinnova-teste-qa.vercel.app/form", "https://tinnova-teste-qa.vercel.app/"],
+  "plugins": []
+}
